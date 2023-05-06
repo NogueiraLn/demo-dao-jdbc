@@ -27,7 +27,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 	}
 
 	@Override
-	public void updte(Department obj) {
+	public void update(Department obj) {
 		// TODO Auto-generated method stub
 
 	}
@@ -80,6 +80,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 				Department obj = new Department();
 				obj.setId(rs.getInt("Id"));
 				obj.setName(rs.getString("Name"));
+				list.add(obj);
 			}
 			return list;
 
